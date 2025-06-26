@@ -1,3 +1,5 @@
+package Basic;
+
 import java.util.Scanner;
 
 public class userinput {
@@ -16,7 +18,7 @@ public class userinput {
 //        Double d = sc.nextDouble();
 //        System.out.println(d);
 
-        //Sum
+        //Basic.Sum
 //        int a = sc.nextInt();
 //        int b = sc.nextInt();
 //        int sum = a +b;

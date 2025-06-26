@@ -1,3 +1,5 @@
+package Basic;
+
 public class index {
   public static void main(String[] args) {
     System.out.println("Raman Singh");//using ln for next line
