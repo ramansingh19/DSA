@@ -1,4 +1,4 @@
-package Loops;
+package Loops.ForLoop;
 
 public class SquarePattern {
     public static void main(String[] args) {

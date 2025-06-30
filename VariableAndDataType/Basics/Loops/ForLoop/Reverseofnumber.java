@@ -1,4 +1,4 @@
-package Loops;
+package Loops.ForLoop;
 
 import java.util.Scanner;
 
