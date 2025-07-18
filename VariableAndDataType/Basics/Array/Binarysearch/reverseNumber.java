@@ -1,4 +1,4 @@
-package Array;
+package Array.Binarysearch;
 
 public class reverseNumber {
 

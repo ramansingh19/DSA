@@ -1,6 +1,4 @@
-package Array;
-
-import java.util.*;
+package Array.LinearSearch;
 
 public class largestNumber {
 
