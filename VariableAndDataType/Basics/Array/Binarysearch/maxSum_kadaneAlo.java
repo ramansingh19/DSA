@@ -10,7 +10,7 @@ public class maxSum_kadaneAlo {
 
             //index 0 to infinite using this loop.
             for (int i=0; i<arr.length; i++){
-                currSum = arr[i];
+                currSum = currSum + arr[i];
                 if (currSum < 0){
                     currSum = 0;
                 }
