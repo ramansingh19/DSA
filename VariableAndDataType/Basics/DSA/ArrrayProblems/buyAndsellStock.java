@@ -1,5 +1,4 @@
-package DSA;
-import java.util.*;
+package DSA.ArrrayProblems;
 
 public class buyAndsellStock {
 

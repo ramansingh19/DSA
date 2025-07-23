@@ -1,4 +1,4 @@
-package Array;
+package DSA.ArrrayProblems;
 
 import java.util.HashSet;
 
