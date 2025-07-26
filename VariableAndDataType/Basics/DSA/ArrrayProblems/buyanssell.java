@@ -1,28 +1,32 @@
 package DSA.ArrrayProblems;
 
-import java.util.*;
 public class buyanssell {
 
-    public static int buyAndSEll(int prices[]) {
-        int buy = prices[0];
-        int profit = 0;
+    public static int buyAndSell(int prices[]){
+        int buyPrice = Integer.MAX_VALUE;
+        int  maxprofit = 0;
 
-        for (int i = 1; i <= prices.length; i++) {
-            if (buy < prices[i]) {
-                profit = Math.max(prices[i] - buy, profit);
-            } else {
-                buy = prices[i];
+        for (int i=0; i<prices.length; i++){
+            if (buyPrice < prices[i]){
+                int profit = prices[i] - buyPrice;
+                maxprofit = Math.max(profit,maxprofit);
+            }else {
+                buyPrice = prices[i];
             }
-            return profit;
         }
+        return maxprofit;
     }
 
-   public static void main(String[] args) {
-        int prices[] = {7,1,2,4,5,6,1};
+    public static void main(String[] args) {
+        int prices[] = {7,1,3,2,6,5,1};
 
-        System.out.println(buyAndSEll(prices));
+        System.out.println(buyAndSell(prices));
 
-      }
+    }
+
+
+}
+
 
 
 
