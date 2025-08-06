@@ -1,8 +1,12 @@
 package Sorting.BubbleSort;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.*;
+
 public class basics {
 
-    public static void bubbleSort(int arr[]){
+    public static void bubbleSort(Integer arr[]){
         for (int turn=0; turn< arr.length-1; turn++){
             int swaps = 0;
             for (int j=0; j< arr.length-1-turn; j++){
@@ -20,7 +24,7 @@ public class basics {
         }
     }
 
-    public static void printArr(int arr[]){
+    public static void printArr(Integer arr[]){
         for (int i=0; i< arr.length; i++){
             System.out.print(arr[i] + " ");
         }
@@ -28,8 +32,9 @@ public class basics {
     }
 
     public static void main(String[] args) {
-        int arr[] = {8,70,6,90,4,4,3,};
-        bubbleSort(arr);
+        Integer arr[] = {5,4,3,2,6,7,9};
+//        bubbleSort(arr);
+        Arrays.sort(arr, 0,6,Collections.reverseOrder());
         printArr(arr);
 
     }
