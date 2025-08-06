@@ -33,20 +33,23 @@ public class descendingOrder {
 //        }
 //    }
 
-    //using Selection sort
-    public static void slectionSort(int arr[]){
-        for (int i=0; i<arr.length-1; i++){
-            int max = i;
-            for (int j = i+1; j<arr.length; j++){
-                if (arr[max] < arr[j]){
-                    max = j;
-                }
-            }
-            int temp = arr[max];
-            arr[max] = arr[i];
-            arr[i] = temp;
-        }
-    }
+//    //using Selection sort
+//    public static void slectionSort(int arr[]){
+//        for (int i=0; i<arr.length-1; i++){
+//            int max = i;
+//            for (int j = i+1; j<arr.length; j++){
+//                if (arr[max] < arr[j]){
+//                    max = j;
+//                }
+//            }
+//            int temp = arr[max];
+//            arr[max] = arr[i];
+//            arr[i] = temp;
+//        }
+//    }
+
+    //using counting Sort
+
 
 
     public static void Printarr(int arr[]){
@@ -63,7 +66,7 @@ public class descendingOrder {
         int arr[] = {3,6,2,1,8,7,4,5,3,1};
 //        descendingOrder(arr);
 //        insertionDes(arr);
-        slectionSort(arr);
+//        slectionSort(arr);
         Printarr(arr);
     }
 }
