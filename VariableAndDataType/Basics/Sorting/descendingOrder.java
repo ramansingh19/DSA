@@ -20,18 +20,34 @@ public class descendingOrder {
 //        }
 //    }
 
-    //Using insertion sort algo
-    public static void insertionDes(int arr[]){
-        for (int i=0; i< arr.length; i++){
-            int curr = arr[i];
-            int prev = i-1;
-            while (prev >= 0 && arr[prev] < curr){
-                arr[prev+1] = arr[prev];
-                prev--;
+//    //Using insertion sort algo
+//    public static void insertionDes(int arr[]){
+//        for (int i=1; i< arr.length; i++){
+//            int curr = arr[i];
+//            int prev = i-1;
+//            while (prev >= 0 && arr[prev] < curr){
+//                arr[prev+1] = arr[prev];
+//                prev--;
+//            }
+//            arr[prev+1] = curr;
+//        }
+//    }
+
+    //using Selection sort
+    public static void slectionSort(int arr[]){
+        for (int i=0; i<arr.length-1; i++){
+            int max = i;
+            for (int j = i+1; j<arr.length; j++){
+                if (arr[max] < arr[j]){
+                    max = j;
+                }
             }
-            arr[prev+1] = curr;
+            int temp = arr[max];
+            arr[max] = arr[i];
+            arr[i] = temp;
         }
     }
+
 
     public static void Printarr(int arr[]){
 
@@ -46,7 +62,8 @@ public class descendingOrder {
 
         int arr[] = {3,6,2,1,8,7,4,5,3,1};
 //        descendingOrder(arr);
-        insertionDes(arr);
+//        insertionDes(arr);
+        slectionSort(arr);
         Printarr(arr);
     }
 }
