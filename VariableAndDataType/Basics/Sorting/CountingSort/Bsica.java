@@ -7,6 +7,7 @@ public class Bsica {
         for (int i=0; i<arr.length; i++){
             largest = Math.max(largest , arr[i]);
         }
+        //use for frequency
         int count[] = new int[largest+1];
         for (int i=0; i<arr.length; i++){
             count[arr[i]]++;
