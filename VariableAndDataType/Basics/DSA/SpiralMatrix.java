@@ -10,11 +10,11 @@ public class SpiralMatrix {
 
         while (startrow <= endrow && startcoln <= endcoln){
             //top
-            for (int j=startcoln; j<endcoln; j++){
+            for (int j=startcoln; j<=endcoln; j++){
                 System.out.print(matrix[startrow][j] + " ");
             }
             //right
-            for (int i=startrow; i<=endrow; i++){
+            for (int i=startrow+1; i<=endrow; i++){
                 System.out.print(matrix[i][endcoln] + " ");
             }
             //bottom
@@ -44,8 +44,10 @@ public class SpiralMatrix {
         int matrix[][] = {{1,2,3,4},
                             {5,6,7,8},
                                 {9,10,11,12},
-                                    {13,14,15,16}};
+                                    {13,14,15,16},
+                                        {17,18,19,20}};
         sprialMatrix(matrix);
     }
+
 
 }
