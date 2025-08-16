@@ -13,7 +13,10 @@ public class Palindrome {
     }
 
     public static void main(String[] args) {
-        String str = "noons";
+//        String str = "noons";
+        int num = 121;
+        String str = String.valueOf(num);
+
         System.out.println(palindrome(str));
     }
 }
