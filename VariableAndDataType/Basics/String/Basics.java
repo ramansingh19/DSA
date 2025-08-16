@@ -37,3 +37,23 @@ public class Basics {
 
     }
 }
+//
+//Count the number of vowels and consonants in a string.
+//
+//Count the number of words in a string.
+//
+//Reverse a string without using built-in functions.
+//
+//Check if a string is a palindrome.
+//
+//Find the frequency of each character in a string.
+//
+//Convert a string to uppercase without using built-in methods.
+//
+//Count the number of digits, alphabets, and special characters in a string.
+//
+//Remove all white spaces from a string.
+//
+//Replace all vowels in a string with *.
+//
+//Compare two strings without using the built-in equals() or ==.
