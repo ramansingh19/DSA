@@ -4,14 +4,48 @@ import java.util.Scanner;
 
 public class Basics {
 
-    public static void Stringlength(String str){
-        for (int i=0; i<str.length(); i++){
-            System.out.print(str.charAt(i) + " ");
-        }
-        System.out.println();
-    }
+//    public static void Stringlength(String str){
+//        for (int i=0; i<str.length(); i++){
+//            System.out.print(str.charAt(i) + " ");
+//        }
+//        System.out.println();
+//    }
 
     public static void main(String[] args) {
+
+       String firstname = "Raman";
+       String middlename = " ";
+       String lastname = "Singh";
+       String finalresult = firstname+middlename+lastname;
+        System.out.println(finalresult);
+
+        
+
+//
+//        //value based searching
+//        String s1 = "Raman";
+//        String s2 = "Raman";
+//        String s3 = new String("Raman");
+//
+//        if (s1 == s2) {
+//            System.out.println("String is equals");
+//        } else {
+//            System.out.println("String is no equals");
+//        }
+//
+//        if (s1 == s3) {
+//            System.out.println("String is equals");
+//        } else {
+//            System.out.println("String is no equals");
+//        }
+////equals is use for value check
+//        if (s1.equals(s3)) {
+//            System.out.println("String is equals");
+//        } else {
+//            System.out.println("String is no equals");
+//        }
+//
+
 //        char arr[] = {'a', 'b', 'c', 'd'};
 //        String str = "raman";
 //        String str2 = new String("Raman923ijijuw2w9u9321ui");
@@ -28,15 +62,18 @@ public class Basics {
 //        String name = "Raman kumar";
 //        System.out.println(name.length());
 
-        //concatations
-        String firstname = "Porche";
-        String secondname = "911";
-        String fullnname = firstname + " " + secondname;
-
-        Stringlength(fullnname);
-
+//        //concatations
+//        String firstname = "Porche";
+//        String secondname = "911";
+//        String fullnname = firstname + " " + secondname;
+//
+//        Stringlength(fullnname);
+//
     }
 }
+
+
+
 //
 //Count the number of vowels and consonants in a string.
 //
