@@ -1,4 +1,4 @@
-package String;
+package DSA.ArrrayProblems;
 
 public class Palindrome {
 
@@ -13,6 +13,7 @@ public class Palindrome {
 //    }
 
     public static boolean palindrome(String str){
+        str = str.toLowerCase();
         for (int i=0; i<str.length()/2; i++){
             int n = str.length();
             if (str.charAt(i) == str.charAt(n-1-i)){

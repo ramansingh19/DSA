@@ -3,7 +3,7 @@ package String;
 import java.util.Arrays;
 
 public class Practice_05 {
-    public static void main(String[] args) {
+    public static boolean main(String[] args) {
 
         String str1 = "Raman";
         String str2 = "amanr";
@@ -12,7 +12,7 @@ public class Practice_05 {
         str2 = str2.toLowerCase();
 
         if (str1.length() != str2.length()){
-            System.out.print("not anagram");
+            return false;
         }else {
             char[] arr1 = str1.toCharArray();
             char[] arr2 = str2.toCharArray();
@@ -21,11 +21,13 @@ public class Practice_05 {
             Arrays.sort(arr2);
 
             if (Arrays.equals(arr1 , arr2)){
-                System.out.print("Anagram");
+                return true;
             }else {
-                System.out.print("not anagram");
+                return false;
             }
         }
+
+
 
 
 

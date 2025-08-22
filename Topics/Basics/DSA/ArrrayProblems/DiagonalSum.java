@@ -1,4 +1,4 @@
-package DSA;
+package DSA.ArrrayProblems;
 
 public class DiagonalSum {
 
