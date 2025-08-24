@@ -4,10 +4,11 @@ public class Even_Odd {
 
     public static void EvenOdd(int n){
         int bitmask = 1;
-        if ((n & bitmask) == 0){
-            System.out.println("Even number");
+//        if ((n & bitmask) == 0){
+        if((n & bitmask) ==1){
+            System.out.println("odd number");
         }else {
-            System.out.println("Odd number");
+            System.out.println("Even number");
         }
     }
 
