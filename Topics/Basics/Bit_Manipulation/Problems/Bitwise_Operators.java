@@ -4,17 +4,16 @@ public class Bitwise_Operators {
 
 
     //get ithBit
-//    public static int getIthbit(int n, int i){
-//
-//
-//        int bitmask = 1<<i;
-//        if ((n & bitmask) == 0){
-//            return 0;
-//        }else {
-//            return 1;
-//        }
-//
-//    }
+    public static int getIthbit(int n, int i){
+
+        int bitmask = 1<<i;
+        if ((n & bitmask) == 0){
+            return 0;
+        }else {
+            return 1;
+        }
+
+    }
 
     //set ith Bit
     public static int setithBit(int n , int i){
@@ -36,6 +35,9 @@ public class Bitwise_Operators {
         }else {
             return setithBit(n,i);
         }
+//        n = clearithBit(n , i);
+//        int bitmask = new bit<<i;
+//        return n | bitmask;
     }
 
     //clear last ith 1111 with i=2 = 1100
@@ -85,15 +87,15 @@ public class Bitwise_Operators {
 
     public static void main(String[] args) {
 
-//        System.out.println(getIthbit(20,2 ));
-//        System.out.println(setithBit(10 , 2));
-//        System.out.println(clearithBit(10,1));
+        System.out.println(getIthbit(5,2 ));
+        System.out.println(setithBit(10 , 2));
+        System.out.println(clearithBit(10,1));
 //        System.out.println(updateithBit(10,2,1));
 ////        System.out.println(clearlastith(15 , 2));
 //        System.out.println(rangeofBits(10,2,4));
 //        System.out.println(powerof2ornot(540));
 //        System.out.println(countSet(19));
-        System.out.println(fasexponentiation(5,3));
+//        System.out.println(fasexponentiation(5,3));
 
 
     }
