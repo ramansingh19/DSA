@@ -3,11 +3,18 @@ package Bit_Manipulation.Problems;
 public class Problem_02 {
 
     public static void SwapNumber(int a, int b){
-        a = a+b;
-        b = a-b;
-        a = a-b;
+
+        a= a^b;
+        b= a^b;
+        a=a^b;
+
+//        a = a+b;
+//        b = a-b;
+//        a = a-b;
 
         System.out.println("After Swap: a = " + a + ", b = " + b);
+//        System.out.println(a);
+//        System.out.println(b);
     }
 
     public static void main(String[] args) {
