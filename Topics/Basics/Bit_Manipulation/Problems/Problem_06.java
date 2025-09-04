@@ -11,6 +11,6 @@ public class Problem_06 {
 
     public static void main(String[] args) {
 
-        System.out.println(powOfTwo(64));
+        System.out.println(powOfTwo(60));
     }
 }
