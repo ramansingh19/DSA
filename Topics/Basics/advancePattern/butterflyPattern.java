@@ -7,7 +7,7 @@ public class butterflyPattern {
             //print stars
             for (int j=1; j<=i; j++){
                 System.out.print("*");
-            }//spaces = 2*(n-i)____(n-i) is divide all the even spaces with multiple of 2
+            }//spaces = 2*(n-i)
             for (int j=1; j<=2*(n-i); j++){
                 System.out.print(" ");
             }//stars
