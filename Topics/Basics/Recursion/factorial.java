@@ -1,17 +1,17 @@
 package Recursion;
 
 public class factorial {
-    public static int fact(int n){
+    public static double fact(double n){
+        //Base case
         if (n == 0) {
             return 1;
         }
-        int fnm1 = fact(n-1);
-        int fn = n * fact(n-1);
+        double fnm1 =  fact(n-1);
+        double fn = n * fact(n-1);
         return fn;
     }
     public static void main(String[] args) {
-        int n = 5;
-        System.out.println(fact(n));
-
+        double n = 5;
+        System.out.println(fact(10));
     }
 }

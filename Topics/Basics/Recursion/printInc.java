@@ -8,7 +8,7 @@ public class printInc {
         }
 
         printInc(n-1 );
-        System.out.print(n + " ");
+        System.out.print((n) + " ");
     }
     public static void main(String[] args) {
         int n = 10;
