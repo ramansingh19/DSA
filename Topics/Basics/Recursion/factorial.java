@@ -11,7 +11,7 @@ public class factorial {
         return fn;
     }
     public static void main(String[] args) {
-        double n = 5;
-        System.out.println(fact(10));
+
+        System.out.println(fact(5));
     }
 }
