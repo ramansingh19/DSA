@@ -1,32 +1,24 @@
 package Array.RevisionArray;
 
 public class reverseArray {
-    public static void reverseArray(int arr[]){
-        int first = 0 , end = arr.length-1;
+    public static int majorityNumber(int arr[]){
+        int n = arr.length;
 
-        while (first < end) {
-            int temp = arr[end];
-            arr[end] = arr[first];
-            arr[first] = temp;
-
-            first++;
-            end--;
+        for (int i=0; i<n; i++){
+            int freq = 0;
+            for (int j=0; j<n; j++){
+                if (arr[i] == arr[j]){
+                    freq++;
+                }
+            }
+            if (freq > n/2){
+                return arr[i];
+            }
         }
-
+        return -1;
     }
     public static void main(String[] args) {
-        int arr[] = {2,4,6,8,10};
-        reverseArray(arr);
-
-        for (int i=0; i<arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-//
+        int arr[] = {3,2,3};
+        System.out.println(majorityNumber(arr));
     }
 }
-//
-// for (int i=arr.length-1; i>=0; i--){
-//            System.out.print(arr[i] + " ");
-//        }
-//        System.out.println();
