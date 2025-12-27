@@ -44,7 +44,7 @@ class Example {
         {
             // normal block
             int x = 10;
-            System.out.println("Normal block, x = " + x);
+            System.out.println("Array.RevisionArray.Normal block, x = " + x);
         }
     }
 }
