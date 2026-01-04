@@ -35,7 +35,7 @@ public class rearrangeNumber {
         while (i < positive){
             result[sorted++] = positiveArray[i++];
         }
-        while (j > negative){
+        while (j < negative){
             result[sorted++] = negativeArray[j++];
         }
         System.out.println("result " + Arrays.toString(result));
