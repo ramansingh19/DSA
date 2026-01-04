@@ -1,4 +1,4 @@
-package Array.RevisionArray.Normal;
+package Array.RevisionArray.Hard;
 
 public class maxSubArraySum {
     public static void maxubArrSum(int arr[]) {
