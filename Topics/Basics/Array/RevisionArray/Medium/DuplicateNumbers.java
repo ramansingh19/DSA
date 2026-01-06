@@ -1,4 +1,4 @@
-package Array.RevisionArray.Normal;
+package Array.RevisionArray.Medium;
 
 public class DuplicateNumbers {
     public static void DuplicateNumber(int arr[]) {

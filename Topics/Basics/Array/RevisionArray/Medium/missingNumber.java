@@ -14,8 +14,8 @@ public class missingNumber {
         return  missingNum;
     }
     public static void main(String[] args) {
-        int arr[] = {1,2,4,5};
-        int num = 5;
+        int arr[] = {1,2,4,10};
+        int num = 10;
 
         System.out.println(missingNumber(arr , num));
     }

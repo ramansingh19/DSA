@@ -2,29 +2,20 @@ package Array.RevisionArray.Hard;
 
 public class maxSubArraySum {
     public static void maxubArrSum(int arr[]) {
-        int currsum = 0;
-        int max = Integer.MIN_VALUE;
+        int maxSum = Integer.MIN_VALUE;
 
-        for (int i=0; i<arr.length; i++){
-            int start = i;
-            for (int j=i; j<arr.length; j++){
-                int end = j;
-                currsum = 0;
-                for (int k=start ; k<=end; k++){
-                    currsum += arr[k];
-                }
-                System.out.print(currsum);
-                if (max < currsum){
-                    max = currsum;
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
-        System.out.println("maxsum"+ max);
+       for (int i=0; i< arr.length; i++){
+           int currSum = 0;
+           for (int j=i; j<arr.length; j++){
+               currSum += arr[j];
+               maxSum = Integer.max(currSum , maxSum);
+
+           }
+       }
+        System.out.println(maxSum);
     }
     public static void main(String[] args) {
-        int arr[] = {1,-2,6,-1,3};
+        int arr[] = {3,-4,5,4,-1,7,-8};
             maxubArrSum(arr);
     }
 }
